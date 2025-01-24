@@ -8,7 +8,7 @@ BBTools - https://sourceforge.net/projects/bbmap/
 
 FastQC - https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 
-This repository contains a series of scripts for flexible, start-to-finish whole genome (and metagenome!) sequence assembly using SPAdes
+**This repository contains a series of scripts for flexible, start-to-finish whole genome (and metagenome!) sequence assembly using SPAdes**
 
 - the Bash scripts were designed for use on a high-performance computing cluster manged with SLURM
   - the scripts allow a large number of samples to be processed and assembled in parallel
@@ -19,7 +19,7 @@ This repository contains a series of scripts for flexible, start-to-finish whole
 - SPAdes is used to perform assemblies
   - accepts user input for SPAdes assembly mode
 
-A typical workflow would be the following:
+**A typical workflow would be the following:**
 
 - run 1_quality_assess_fastqc.sh on the raw reads
   - then check the "all_summary.txt" file to obtain an idea of the overall quality of the raw reads
