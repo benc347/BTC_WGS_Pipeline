@@ -13,6 +13,7 @@
 
 # this script will run BBDuk on paired end Illumina sequencing data
 	# specifically, it runs the default BBDuk adapter trimming
+ 		# requires the bbduk_adapters.fasta file to be in the same directory
 	# it then takes user input to accept a minimum PHRED quality score
 		# it will then trim bases on each read below that score
 		# it will then remove any trimmed reads with an average quality below the threshold
