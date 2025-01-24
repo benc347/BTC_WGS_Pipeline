@@ -18,3 +18,13 @@ This repository contains a series of scripts for flexible, start-to-finish whole
   - accepts user input for quality and minimum length thresholds
 - SPAdes is used to perform assemblies
   - accepts user input for SPAdes assembly mode
+
+A typical workflow would be the following:
+
+- run 1_quality_assess_fastqc.sh on the raw reads
+  - then check the "all_summary.txt" file to obtain an idea of the overall quality of the raw reads
+  - finally, check a couple of the .html files to see more details of the quality
+- run 2_quality_and_adapter_trim_bbduk.sh on the raw reads
+  - based on the quality information from FastQC, identify reasonable quality and read length thresholds
+- run 3_SPAdes_batch_controller.sh on the trimmed reads
+  - use the appropriate SPAdes assembly mode for the dataset
